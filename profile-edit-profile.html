@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins&family=Rancho&display=swap" rel="stylesheet">
+
+    <!-- script tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Page[Profile-Edit Profile]</title>
+</head>
+<body>
+    <header class="bg-white">
+        <div class="flex justify-between items-center h-24 px-5 md:px-12 text-sm">
+            <a href="/index.html">
+                <div class="flex text-2xl">
+                    <img src="/assets/logo-wetick.png" alt="Logo Wetick">
+                    <span class="flex items-center text-[#E14D2A]">
+                        we
+                    </span>
+                    <span class="flex items-center text-[#48E0E4]">
+                        tick
+                    </span>
+                </div>
+            </a>
+            <div class="hidden md:block">
+                <ul class="flex gap-12">
+                    <li>
+                        <a href="/index.html">home</a>
+                        <hr style="width: 45px; height: 3px; background-color: #FD841F ;">
+                    </li>
+                    <li>
+                        Create Event
+                    </li>
+                    <li>
+                        Location
+                    </li>
+                </ul>
+            </div>
+            <a class="hidden md:block" href="/profile-edit-profile.html">
+                <div class="flex items-center gap-3.5">
+                    <div class="inline-block rounded-full p-[2px] bg-gradient-to-r from-cyan-500 to-blue-500">
+                        <img class="w-11 h-11 object-cover rounded-full border-2 border-white" src="/assets/profile1.jpg" alt="profile1">
+                    </div>
+                    <div>
+                        Kim Ji-soo
+                    </div>
+                </div>
+            </a>
+
+            <div class="block md:hidden ">
+                <div class="flex justify-center items-center h-full">
+                    <i data-feather="align-justify"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="bg-[#F4F7FF]">
+        <div class="flex">
+            <aside class="hidden md:block w-60 mx-16 my-12">
+                <div class="flex gap-3.5 mb-14">
+                    <div>
+                        <div class="inline-block rounded-full p-[2px] bg-gradient-to-r from-cyan-500 to-blue-500">
+                            <img class="w-11 h-11 object-cover rounded-full border-2 border-white" src="/assets/profile1.jpg" alt="profile1">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-sm">
+                            Kim Ji-soo
+                        </div>
+                        <div class="text-xs">
+                            Entrepreneur, ID
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="flex gap-7 mb-8 text-sm"><i data-feather="user"></i>Profile</li>
+                    <li>
+                        <ul class="ml-7">
+                            <li class="flex gap-7 mb-8 text-sm"><i data-feather="credit-card"></i>Card</li>
+                            <a href="/profile-edit-profile.html">
+                                <li class="flex gap-7 mb-8 text-sm"><i data-feather="edit-3"></i>Edit Profile</li>
+                            </a>
+                            <a href="/profile-change-password.html">
+                                <li class="flex gap-7 mb-8 text-sm"><i data-feather="unlock"></i>Change Password</li>
+                            </a>
+                        </ul>
+                    </li>
+                    <a href="/my-booking.html">
+                        <li class="flex gap-7 mb-8 text-sm"><i data-feather="list"></i>My Booking</li>
+                    </a>
+                    <a href="/my-wishlist.html">
+                        <li class="flex gap-7 mb-8 text-sm"><i data-feather="heart"></i>My Wishlist</li>
+                    </a>
+                    <li class="flex gap-7 mb-8 text-sm"><i data-feather="settings"></i>Settings</li>
+                    <li class="flex gap-7 mb-8 text-sm text-[#F03800]"><i data-feather="log-out"></i>Logout</li>
+                </ul>
+            </aside>
+            <div class="flex-1 md:my-12">
+                <div class="flex flex-col-reverse items-center lg:flex-row lg:justify-between lg:gap-11 bg-white px-12 lg:py-11 rounded-2xl md:mr-16">
+                    <section class="w-full lg:w-[60%]">
+                        <div class="text-xl font-bold tracking-wider mb-12 text-xl">Profile</div>
+                        <form class="flex flex-col gap-8 text-sm">
+                            <div class="flex flex-col justify-start items-start lg:flex-row lg:items-center  gap-5 lg:gap-10">
+                                <label class="w-36" for="old-password">Name</label>
+                                <input class="h-14 w-full px-7 border border-[#777777] rounded-lg" type="username" name="username" id="user-name" placeholder="Kim Ji-soo">
+                            </div>
+                            <div class=" flex flex-col justify-start items-start lg:flex-row lg:items-center gap-5 lg:gap-16">
+                                <div class="w-32">
+                                    Username
+                                </div>
+                                <div class="flex justify-start gap-4">
+                                    <div class="text-[#777777]">
+                                            @jisoo
+                                    </div>
+                                        <a href="/edit">Edit</a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-start items-start lg:flex-row lg:items-center gap-5 lg:gap-16">
+                                <div class="w-32">
+                                    Email
+                                </div>
+                                <div class="flex flex-col justify-start gap-4">
+                                    <div class="flex items-center gap-7">
+                                        <div class="text-[#777777]">
+                                            jisoo@gmail.com
+                                        </div>
+                                        <a href="/edit">Edit</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-start items-start lg:flex-row lg:items-center gap-5 lg:gap-16">
+                                <div class="w-32">
+                                    Phone Number
+                                </div>
+                                <div class="flex justify-start gap-4">
+                                    <div class="text-[#777777]">
+                                        081234567890
+                                    </div>
+                                    <a href="/edit">Edit</a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-start items-start lg:flex-row lg:items-center gap-5 lg:gap-16">
+                                <div class="w-32">
+                                    Gender
+                                </div>
+                                <div class="flex gap-12">
+                                    <div class="flex gap-2">
+                                        <input class="rounded-full" type="radio" id="male" name="male">
+                                        <label class="text-[#777777]" for="male">Male</label>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <input class="rounded-full" type="radio" id="female" name="female">
+                                        <label class="text-[#777777]" for="female">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-start items-start lg:flex-row lg:items-center gap-5 lg:gap-12">
+                                <label class="w-32" for="profession">Profession</label>
+                                <select class="h-14 w-full px-7 border border-[#C1C5D0] rounded-lg" name="profession" id="profession">
+                                    <option value="enterpreneur">Entrepreneur</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col justify-start items-start lg:flex-row lg:items-center gap-5 lg:gap-12">
+                                <label class="w-32" for="profession">Nationality</label>
+                                <select class="h-14 w-full px-7 border border-[#C1C5D0] rounded-lg" name="profession" id="profession">
+                                    <option value="enterpreneur">Indonesia</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col justify-start items-start lg:flex-row lg:items-center gap-5 lg:gap-16">
+                                <div class="w-32">
+                                    Birthday Date
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="text-[#777777]">
+                                        03 / 01 / 1995
+                                    </div>
+                                    <a href="/edit">Edit</a>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="bg-[#FD841F] w-[315px] h-[61px] rounded-2xl text-white shadow-lg shadow-orange-500/50 mb-7" type="submit">Update</button>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="w-full lg:w-[40%] pt-20 flex items-center justify-center">
+                        <div>
+                            <div class="flex justify-center mb-12">
+                                <img src="/assets/choose-photo.png" alt="choose-photo">
+                            </div>
+                            <div class="mb-3.5 hidden md:block">
+                                <button class="border-2 border-[#FD841F] w-full h-10 rounded-lg text-[#FD841F] text-sm" type="submit">Choose Photo</button>
+                            </div>
+                            <div class="text-[#777777] text-xs mb-3.5 hidden md:block">
+                                Image size: max, 2 MB
+                            </div>
+                            <div class="text-[#777777] text-xs mb-3.5 hidden md:block">
+                                Image formats: .JPG, .JPEG, .PNG
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-white md:bg-[#F4F7FF] pt-20">
+            <div class="flex flex-col gap-7 px-7 md:px-32">
+                <div class="flex flex-col gap-7 md:gap-0 md:flex-row justify-between">
+                    <div class="flex flex-col gap-5">
+                        <div class="flex justify-start items-center">
+                            <div>
+                                <img src="/assets/logo-wetick.png" alt="Logo Wetick">
+                            </div>
+                            <div>
+                                <span class="text-[#E14D2A]">we</span>
+                                <span class="text-[#48E0E4]">tick</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <p class="font-medium text-sm">Find events you love with our</p>
+                            <div class="flex flex-row gap-2.5">
+                                <img src="/assets/findevent1.png" alt="findevent1">
+                                <img src="/assets/findevent2.png" alt="findevent2">
+                                <img src="/assets/findevent3.png" alt="findevent3">
+                                <img src="/assets/findevent4.png" alt="findevent4">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-base tracking-[1px]">Wetick</p>
+                        <p class="text-[#C1C5D0] tracking-[1px] mt-5">About Us</p>
+                        <p class="text-[#C1C5D0] tracking-[1px] mt-5">Features</p>
+                        <p class="text-[#C1C5D0] tracking-[1px] mt-5">Blog</p>
+                        <p class="text-[#C1C5D0] tracking-[1px] mt-5">Payments</p>
+                        <p class="text-[#C1C5D0] tracking-[1px] mt-5">Mobile App</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-base tracking-[1px]">Features</p>
+                        <p class="text-[#C1C5D0] tracking-[1px] mt-5">Booking</p>
+                        <p class="text-[#C1C5D0] tracking-[1px] mt-5">Create Event</p>
+                        <p class="text-[#C1C5D0] tracking-[1px] mt-5">Discover</p>
+                        <p class="text-[#C1C5D0] tracking-[1px] mt-5">Register</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-base tracking-[1px]">Company</p>
+                        <p class="text-[#C1C5D0] tracking-[1px] mt-5">Partnership</p>
+                        <p class="text-[#C1C5D0] tracking-[1px] mt-5">Help</p>
+                        <p class="text-[#C1C5D0] tracking-[1px] mt-5">Terms of Service</p>
+                        <p class="text-[#C1C5D0] tracking-[1px] mt-5">Privacy Policy</p>
+                        <p class="text-[#C1C5D0] tracking-[1px] mt-5">Sitemap</p>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="font-semibold text-base">&copy;2020 Wetick All Rights Reserved</p>
+                </div>
+            </div>
+    
+        </footer>
+    </main>
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>

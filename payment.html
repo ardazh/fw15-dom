@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins&family=Rancho&display=swap" rel="stylesheet">
+
+    <!-- script tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Page[Payment]</title>
+</head>
+<body  class="bg-[#F4F7FF]">
+    <header class="bg-white">
+        <div class="flex justify-between items-center h-24 px-5 md:px-12 text-sm">
+            <a href="/index.html">
+                <div class="flex text-2xl">
+                    <img src="/assets/logo-wetick.png" alt="Logo Wetick">
+                    <span class="flex items-center text-[#E14D2A]">
+                        we
+                    </span>
+                    <span class="flex items-center text-[#48E0E4]">
+                        tick
+                    </span>
+                </div>
+            </a>
+            <div class="hidden md:block">
+                <ul class="flex gap-12">
+                    <li>
+                        <a href="/index.html">home</a>
+                        <hr style="width: 45px; height: 3px; background-color: #FD841F ;">
+                    </li>
+                    <li>
+                        Create Event
+                    </li>
+                    <li>
+                        Location
+                    </li>
+                </ul>
+            </div>
+            <a class="hidden md:block" href="/profile-edit-profile.html">
+                <div class="flex items-center gap-3.5">
+                    <div class="inline-block rounded-full p-[2px] bg-gradient-to-r from-cyan-500 to-blue-500">
+                        <img class="w-11 h-11 object-cover rounded-full border-2 border-white" src="/assets/profile1.jpg" alt="profile1">
+                    </div>
+                    <div>
+                        Kim Ji-soo
+                    </div>
+                </div>
+            </a>
+
+            <div class="block md:hidden ">
+                <div class="flex justify-center items-center h-full">
+                    <i data-feather="align-justify"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="flex flex-col">
+        <main>
+            <div class="flex flex-col md:flex-row justify-center gap-5 bg-white px-7 md:px-12 py-[70px] md:mx-24 md:mt-16 md:rounded-3xl text-sm">
+                <section class="w-full md:w-[50%]">
+                    <div class="font-bold text-xl tracking-[1px] mb-12">
+                        Payment Method
+                    </div>
+                    <div class="flex items-center gap-4 mb-4 ">
+                        <input type="radio" id="card" name="card">
+                        <img src="/assets/icon-card.png" alt="card">
+                        <label class="flex justify-between w-full" for="card">Card<i data-feather="chevron-up"></i></label>
+                    </div>
+                    <div class="flex justify-center items-center gap-3.5 mb-4">
+                        <img class="w-[70%]" src="/assets/visa.png" alt="visa">
+                        <div class="border border-dashed border-[#FD841F] w-6 h-6 flex justify-center items-center">
+                            <img src="/assets/plus.png" alt="plus">
+                        </div>
+                    </div>
+                    <div class="flex  items-center gap-4 mb-4">
+                        <input type="radio" id="bank" name="bank">
+                        <img src="/assets/icon-bank.png" alt="bank">
+                        <label class="flex justify-between w-full" for="bank">Bank Transfer<i data-feather="chevron-down"></i></label>
+                    </div>
+                    <div class="flex items-center gap-4 mb-4">
+                        <input type="radio" id="retail" name="retail">
+                        <img src="/assets/icon-retail.png" alt="retail">
+                        <label class="flex justify-between w-full" for="retail">Retail<i  data-feather="chevron-down"></i></label>
+                    </div>
+                    <div class="flex items-center gap-4 mb-4">
+                        <input type="radio" id="e-money" name="e-money">
+                        <img src="/assets/icon-dolar.png" alt="retail">
+                        <label class="flex justify-between w-full" for="e-money">E-Money<i data-feather="chevron-down"></i></label>
+                    </div>
+                </section>
+                <section class="w-full md:w-[50%]">
+                    <div class="font-bold text-xl tracking-[1px] mb-12">
+                        Ticket Detail
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            Event
+                        </div>
+                        <div class="text-[#FD841F]">
+                            Sights & Sounds Exhibition
+                        </div>
+                    </div>
+                    <div class="flex justify-between mb-4">
+                        <div>
+                            Ticket Section
+                        </div>
+                        <div class="text-[#FD841F]">
+                            VIP
+                        </div>
+                    </div>
+                    <div class="flex justify-between mb-4">
+                        <div>
+                            Quantity
+                        </div>
+                        <div class="text-[#FD841F]">
+                            2
+                        </div>
+                    </div>
+                    <div class="flex justify-between mb-12">
+                        <div>
+                            Total Payment
+                        </div>
+                        <div class="text-[#FD841F]">
+                            $70
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <button class="w-full h-14 border border-1 rounded-lg bg-[#FD841F] shadow-lg shadow-orange-500/50 text-white">Payment</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <footer class="bg-white md:bg-[#F4F7FF] pt-20">
+        <div class="flex flex-col gap-7 px-7 md:px-32">
+            <div class="flex flex-col gap-7 md:gap-0 md:flex-row justify-between">
+                <div class="flex flex-col gap-5">
+                    <div class="flex justify-start items-center">
+                        <div>
+                            <img src="/assets/logo-wetick.png" alt="Logo Wetick">
+                        </div>
+                        <div>
+                            <span class="text-[#E14D2A]">we</span>
+                            <span class="text-[#48E0E4]">tick</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <p class="font-medium text-sm">Find events you love with our</p>
+                        <div class="flex flex-row gap-2.5">
+                            <img src="/assets/findevent1.png" alt="findevent1">
+                            <img src="/assets/findevent2.png" alt="findevent2">
+                            <img src="/assets/findevent3.png" alt="findevent3">
+                            <img src="/assets/findevent4.png" alt="findevent4">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-semibold text-base tracking-[1px]">Wetick</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">About Us</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Features</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Blog</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Payments</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Mobile App</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-base tracking-[1px]">Features</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Booking</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Create Event</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Discover</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Register</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-base tracking-[1px]">Company</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Partnership</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Help</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Terms of Service</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Privacy Policy</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Sitemap</p>
+                </div>
+            </div>
+            <div class="">
+                <p class="font-semibold text-base">&copy;2020 Wetick All Rights Reserved</p>
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
