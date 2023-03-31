@@ -1,16 +1,14 @@
 const inputEmail = document.getElementById('email')
 
 inputEmail.addEventListener('keyup', function(event){
+    inputEmail.style.border = '1px solid #C1C5D0'
     if(event.target.value === ""){
-        event.target.classList.remove('border-red-600')
-        event.target.classList.add('border-white')
+        inputEmail.style.border = '1px solid red'
     } else{
         if(!event.target.value.includes('@')){
-            event.target.classList.remove('border-white')
-            event.target.classList.add('border-red-600')
+            inputEmail.style.border = '1px solid red'
         }else{
-            event.target.classList.remove('border-red-600')
-            event.target.classList.add('border-greem-600')
+            inputEmail.style.border = '1px solid green'
         }
     }
 })
