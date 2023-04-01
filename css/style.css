@@ -63,7 +63,7 @@ body{
 /* styling form input */
 .form-input input{
     height: 35px;
-    width: 180px;
+    width: 100%;
     border-radius: 10px;
     background: #FFFFFF;
     border: 1px solid #C1C5D0;
@@ -97,7 +97,7 @@ body{
     padding: 0 88px;
     
 
-    box-shadow: 0px 8px 10px rgba(255, 167, 35, 0.178);
+    box-shadow: 0px 8px 10px rgba(255, 167, 35, 0.438);
 }
 
 .forgot a{
