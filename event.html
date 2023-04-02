@@ -18,25 +18,32 @@
 
     <title>Page[Event]</title>
 </head>
-<body class="bg-[#F4F7FF]">
+<body class="create-event bg-[#F4F7FF]">
     <header class="bg-white">
-        <div class="flex justify-between items-center h-24 px-5 md:px-12 text-sm">
-            <a href="/index.html">
-                <div class="flex text-2xl">
-                    <img src="/assets/logo-wetick.png" alt="Logo Wetick">
-                    <span class="flex items-center text-[#E14D2A]">
-                        we
-                    </span>
-                    <span class="flex items-center text-[#48E0E4]">
-                        tick
-                    </span>
+        <div class="flex md:flex-row flex-col justify-between items-center min-h-[6rem] px-5 md:px-12 text-sm">
+            <div class="w-full md:w-[unset] flex justify-between">
+                <a href="/index.html">
+                    <div class="flex text-2xl">
+                        <img src="/assets/logo-wetick.png" alt="Logo Wetick">
+                        <span class="flex items-center text-[#E14D2A]">
+                            we
+                        </span>
+                        <span class="flex items-center text-[#48E0E4]">
+                            tick
+                        </span>
+                    </div>
+                </a>
+                <div class="md:hidden">
+                    <button id="btn-toggler" class="flex justify-center items-center h-full">
+                        <i data-feather="align-justify"></i>
+                    </button>
                 </div>
-            </a>
-            <div class="hidden md:block">
-                <ul class="flex gap-12">
+            </div>
+            <div id="menu" class="flex items-center justify-between flex-1">
+                <ul class="flex md:flex-row flex-col text-center gap-12 w-full justify-center">
                     <li>
                         <a href="/index.html">home</a>
-                        <hr style="width: 45px; height: 3px; background-color: #FD841F ;">
+                        <!-- <hr style="width: 45px; height: 3px; background-color: #FD841F ;"> -->
                     </li>
                     <li>
                         Create Event
@@ -56,12 +63,6 @@
                     </div>
                 </div>
             </a>
-
-            <div class="block md:hidden ">
-                <div class="flex justify-center items-center h-full">
-                    <i data-feather="align-justify"></i>
-                </div>
-            </div>
         </div>
     </header>
     <div class="flex flex-col">
@@ -207,6 +208,7 @@
     </footer>
     <script>
         feather.replace()
-      </script>
+    </script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
