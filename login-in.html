@@ -15,7 +15,7 @@
 
     <title>Page[Sign In]</title>
 </head>
-<body>
+<body class="signIn">
     <div class="container">
         <div class="section1">
             <div class="set-picture">
@@ -29,33 +29,33 @@
                 <img src="/assets/logo-wetick.png" alt="Logo Wetick">
                 <p class="logo-wetick">We<span>tick</span></p>
             </div>
-            <div class="sign-in">
+            <div class="text-info">
                 Sign In
             </div>
-            <div class="text-hi">
+            <div class="text-subInfo">
                 Hi, Welcome back to Urticket! 
             </div>
+            <div id="error-message" class="hidden h-12 flex justify-center item-center text-red-600 text-xs">
+            </div>
             <div>
-                <form class="form-input">
+                <form id="login" class="form-input">
                     <div>
                         <input type="text" placeholder="Username">
                     </div>
                     <div>
-                        <input id="email" type="email" placeholder="Email">
+                        <input name="email" id="email" type="email" placeholder="Email">
                     </div>
                     <div class="click-show">
-                        <input id="password" type="password" placeholder="Password" src="/assets/view 1.png">
-                        <button class="btn-show">
-                            <img src="/assets/eye.png" alt="Eye">
+                        <input name="password" id="password" type="password" placeholder="Password" src="/assets/view 1.png">
+                        <button id="show" class="btn-show">
+                            <img  src="/assets/eye.png" alt="Eye">
                         </button>
                     </div>
-                    <div class="forgot">
+                    <div class="forgot text-blue-400">
                         <a href="/login-forgot.html">Forgot Password?</a>
                     </div>
-                    <div>
-                        <a href="./index.html">
-                            <button class="btn-signin">Sign In</button>
-                        </a>
+                    <div>   
+                        <button class="cust-btn-signin bg-[#FD841F] text-white text-xs rounded-[10px] outline-none px-[88px]" type="submit" >Sign In</button>
                     </div>
                 </form>
             </div>

@@ -11,9 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins&family=Rancho&display=swap" rel="stylesheet">
 
-    <title>Page[Sign In]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Page[Forgot Password]</title>
 </head>
-<body>
+<body class="forgotPass">
     <div class="container">
         <div class="section1">
             <div class="set-picture">
@@ -27,19 +29,19 @@
                 <img src="/assets/logo-wetick.png" alt="Logo Wetick">
                 <p class="logo-wetick">We<span>tick</span></p>
             </div>
-            <div class="sign-in">
+            <div class="text-info">
                 Forgot Password
             </div>
-            <div class="text-hi">
+            <div class="text-subInfo">
                 You’ll get mail soon on your email
             </div>
             <div>
                 <form class="form-input">
                     <div>
-                        <input type="email" placeholder="Email">
+                        <input name="email" id="email" type="email" placeholder="Email">
                     </div>
                     <div>
-                        <button class="btn-signin" type="submit">Send</button>
+                        <button class="cust-btn-signin bg-[#FD841F] text-white text-xs rounded-[10px] outline-none px-[88px]" type="submit" >Send Email</button>
                     </div>
                 </form>
             </div>
@@ -58,5 +60,6 @@
             </div>
         </div>
     </div>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
