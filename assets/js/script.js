@@ -134,9 +134,16 @@ if (signUp){
         event.preventDefault()
         const email = event.target.email.value
         const password = event.target.password.value
-        if(email === "admin@gmail.com" && password === "admin123"){
+        const password2 = event.target.password2.value
+        if(password2 != password){
+            errorMessage.innerText = "*Password dont match"
+            errorMessage.classList.remove('hidden')
+        } 
+        else if(email === "admin@gmail.com" && password === "admin123"){
             window.location = '/home.html'
-        }else{
+            // console.log('lolos')
+        }
+        else{
             errorMessage.innerText = "*incorrect email or password"
             errorMessage.classList.remove('hidden')
         }
@@ -172,8 +179,10 @@ if(eventToggler){
         const token = menu.classList
         if(token.contains('hidden')){
             token.remove('hidden')
+            token.add('flex')
         }else{
             token.add('hidden')
+            token.remove('flex')
         }
     })
 }
