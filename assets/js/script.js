@@ -11,7 +11,7 @@ if (signIn){
     const errorMessage = document.getElementById('error-message')
 
     inputUser.addEventListener('keyup', function(event){
-        errorMessage.classList.add('hidden')
+        errorMessage.classList.add('hidden')    
         inputUser.style.border = '1px solid #C1C5D0'
         if(event.target.value === ""){
             inputUser.style.border = '1px solid red'
